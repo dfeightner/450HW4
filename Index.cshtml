@@ -1,0 +1,63 @@
+﻿@model List<Vehicle>
+
+<div class="Container">
+    <div>
+        <a asp-controller="Vehicle" asp-action="Create" class="btn btn-primary"> Create new vehicle</a>
+    </div>
+
+</div>
+
+
+
+<h1>Vehicles</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Vehicle ID</th>
+            <th>Mileage</th>
+            <th>Date Received</th>
+            <th>Date Sold</th>
+            <th>Vehicle Status</th>
+            <th>VIN</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+
+
+
+
+    <tbody>
+
+        @foreach (var VehicleOb in Model)
+        {
+            <tr>
+                <td>@VehicleOb.VehicleId</td>
+                <td>@VehicleOb.Mileage </td>
+                <td>@VehicleOb.DateReceived.ToShortDateString() </td>
+                <td>@VehicleOb.DateSold.ToShortDateString()</td>
+                <td>@VehicleOb.VehicleStatus </td>
+                <td>@VehicleOb.VIN</td>
+                <td>@VehicleOb.Make </td>
+                <td>@VehicleOb.Model </td>
+                <td>@VehicleOb.Year </td>
+
+             
+
+                <td>
+                    <a asp-controller="Vehicle" asp-action="Edit" asp-route-id="@VehicleOb.VehicleId">Edit</a>
+                </td>
+
+                <td>
+                    <a asp-controller="Vehicle" asp-action="Delete" asp-route-id="@VehicleOb.VehicleId">Delete</a>
+                </td>
+
+            </tr>
+        }
+
+
+
+    </tbody>
+
+</table>

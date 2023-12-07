@@ -1,0 +1,82 @@
+﻿@model Vehicle
+
+
+
+<div class="col-md-8">
+
+    <form asp-action="Create">
+
+
+        <div class="form-group">
+            <label asp-for="Mileage" class="control-label"></label>
+            <input asp-for="Mileage" class="form-control">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label asp-for="DateReceived" class="control-label"></label>
+            <input asp-for="DateReceived" class="form-control">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label asp-for="DateSold" class="control-label"></label>
+            <input asp-for="DateSold" class="form-control">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label asp-for="VehicleStatus" class="control-label"></label>
+            <input asp-for="VehicleStatus" class="form-control">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label asp-for="VIN" class="control-label"></label>
+            <input asp-for="VIN" class="form-control">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label asp-for="Make" class="control-label"></label>
+            <input asp-for="Make" class="form-control">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label asp-for="Model" class="control-label"></label>
+            <input asp-for="Model" class="form-control">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label asp-for="Year" class="control-label"></label>
+            <input asp-for="Year" class="form-control">
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+
+
+
+
+    </form>
+
+    <p>
+
+        <a asp-controller="Vehicle" asp-action="Index">Back to List</a>
+
+    <p />
+
+
+</div>

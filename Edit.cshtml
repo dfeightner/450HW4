@@ -1,0 +1,57 @@
+﻿@model Vehicle
+
+<div class="row">
+    <form asp-action="Edit">
+        <input type="hidden" asp-for="VehicleId" />
+
+        <div class="form-group">
+            <label asp-for="Mileage" class="label-control"></label>
+            <input asp-for="Mileage" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DateReceived" class="label-control"></label>
+            <input asp-for="DateReceived" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DateSold" class="label-control"></label>
+            <input asp-for="DateSold" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="VehicleStatus" class="label-control"></label>
+            <input asp-for="VehicleStatus" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="VIN" class="label-control"></label>
+            <input asp-for="VIN" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Make" class="label-control"></label>
+            <input asp-for="Make" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Model" class="label-control"></label>
+            <input asp-for="Model" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Year" class="label-control"></label>
+            <input asp-for="Year" class="form-control" />
+        </div>
+
+
+        <div class="form-group">
+            <input type="submit" value="Save Changes" class="btn btn-primary" />
+        </div>
+
+
+
+    </form>
+
+
+</div>
